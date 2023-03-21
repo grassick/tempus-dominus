@@ -2196,6 +2196,7 @@ class Dates {
         // case of calling setValue(null)
         if (!target) {
             this._setValueNull(isClear, index, oldDate);
+            return;
         }
         index = index || 0;
         target = target.clone;
